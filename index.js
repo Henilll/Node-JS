@@ -1,7 +1,10 @@
-const apple=require("./apple")
-const banana=require("./banana")
-const mango=require("./mango")
+const figlet=require('figlet')
 
-let fruits=[apple,banana,mango]
-
-module.exports=fruits;
+figlet("Henil!",function(err,data){
+    if(err){
+        console.log("Something Wrong!!")
+        console.dir(err)
+        return;
+    }
+    console.log(data)
+});
